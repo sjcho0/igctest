@@ -1,0 +1,89 @@
+/* saerchArea */
+.searchArea{margin-top: 0; background: #eee; padding: 20px 12px 10px; text-align: center;}
+input.inputTextType3::placeholder{font-family: Pretendard, sans-serif;}
+input.datePicker::placeholder{font-family: Pretendard, sans-serif;}
+input.btnType5{background-color: #fff; font-family: PretendardM, sans-serif;}
+.searchArea .selectBox1{min-width: 85px; font-family: Pretendard, sans-serif;}
+.searchArea .title{display: inline-block; line-height: 34px; margin-right: 2px; font-size: 15px; font-family: Pretendard, sans-serif;}
+@media screen and (max-width : 1090px) {
+    .searchArea{text-align: left;}
+}
+@media screen and (max-width : 350px) {
+    input.inputTextType3{width: 270px;}
+}
+/* 제한검색 */
+.searchArea .limitSearchTit{margin-bottom:10px;color:#000;background:url(../../../../image/en/solution/common/ico/limitSearchBg.png) no-repeat 0 50%;padding:0 20px;}
+.searchArea fieldset{width:100%;}
+/* 제한검색-태블릿 */
+@media screen and (min-width:763px) and (max-width:1023px){
+	.searchArea{margin:20px 0 40px 0}
+	.searchArea .typeSelect{width:20%}
+}
+/* 제한검색-모바일 */
+@media screen and (min-width:0px) and (max-width:767px){
+	.searchArea{margin:20px 0 10px; padding: 0; background: #fff; border-bottom:1px solid #e6e6e6}
+	.searchArea .limitSearchTit{display:none}
+	.searchArea .limitSearchBtn{display:block;margin-bottom:20px;background:url(../../../../image/en/solution/common/ico/limitSearchOn.gif) no-repeat 100% 50%;font-weight:600}
+	.searchArea .limitSearchBtn.on{background:url(../../../../image/en/solution/common/ico/limitSearchOff.gif) no-repeat 100% 50%;}
+	.searchArea .limitSearchBtn a{display:block;color:#000;background:url(../../../../image/en/solution/common/ico/limitSearchBg.png) no-repeat 0 50%;padding:0 20px;}
+	.searchArea form{display:none}
+}
+
+/* dbSsearch */
+.limitSearchBtn.on ~ .atozSearch{display: block;}
+.dbSsearch{text-align: center;}
+.dbSsearch input.inputTextType1{max-width: 285px; width: calc(100% - 170px);}
+
+/* atoz */
+.atoz{border: 0; margin-bottom: 10px;}
+.atoz div:first-child{margin-top: 0;}
+.atoz a{font-size: 15px;}
+.atoz a.selected{background: #514090;}
+/* listInfo */
+.listInfo{margin-bottom: 0;}
+.listInfo::after{content: ""; display: block; clear: both;}
+
+/* cyberLibrary */
+.cyberLibrary{background: #f4f6f9; padding: 65px 105px 110px;}
+.cyberLibrary .cyberBox{display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background: #fff; min-height: 125px; border-top: 2px solid #51a5a7; border-radius: 10px; text-align: center; font-family: GmarketSansM, sans-serif; font-size: 15px; color: #333; position: relative; padding: 0 200px; letter-spacing: -0.025em; word-break: keep-all; margin-bottom: 60px; box-shadow: 0px 0px 7px 0px rgba(215, 219, 227, 1);}
+.cyberLibrary .cyberBox::before{content: ""; display: block; width: 223px; height: 108px; background: url(../../../../image/en/local/donation/guide/cyberBg1.png) no-repeat center; position: absolute; left: -32px; bottom: -2px;}
+.cyberLibrary .cyberBox::after{content: ""; display: block; width: 33px; height: 33px; background: url(../../../../image/en/local/donation/guide/cyberBg2.png) no-repeat center; position: absolute; right: 32px; top: -14px;}
+.cyberLibrary .cyberBox .bold{font-family: GmarketSansB, sans-serif;}
+
+.cyberLibrary .cyberLibraryList{display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-lines: multiple; -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 64px;}
+.cyberLibrary .cyberLibraryList>li{width: calc((100% - (64px*3))/4);}
+.cyberLibrary .cyberLibraryList>li a{display: block; text-align: center; background: #fff; position: relative; transition: all .5s;}
+.cyberLibrary .cyberLibraryList>li a::after{content: ""; display: block; width: 100%; height: 100%; background: rgba(36, 44, 67, 0.85) url(../../../../image/en/local/donation/more2.png) no-repeat center; position: absolute; left: 0; top: 0; opacity: 0; transition: all .5s;}
+.cyberLibrary .cyberLibraryList>li a:hover::after{opacity: 1;}
+.cyberLibrary .imgArea{display: inline-block; width: 86px; height: 86px; border-radius: 50%; overflow: hidden; margin-bottom: 20px;}
+.cyberLibrary .imgArea img{width: 100%; height: 100%;}
+.cyberLibrary .info{display: block; padding: 37px 0 30px;  border: 1px solid #c5c5c5; border-bottom: 0; box-sizing: border-box;}
+.cyberLibrary .donor{display: block; font-family: GmarketSansM, sans-serif; font-size: 16px; color: #333;}
+.cyberLibrary .donor .name{font-family: GmarketSansB, sans-serif;}
+.cyberLibrary .sum{font-family: GmarketSansM, sans-serif; font-size: 15px; color: #333;}
+.cyberLibrary .lib{display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 60px; padding: 0 5px; font-family: GmarketSansM, sans-serif; font-size: 17px; color: #fff; background: #0e7079; box-sizing: border-box;box-shadow: 18px 24px 20px 0px rgba(215, 219, 227, 0.72); line-height: 1.2em;}
+@media screen and (max-width : 1240px) {
+    .cyberLibrary .cyberBox{padding: 0 100px 0 150px;}
+    .cyberLibrary .cyberBox::before{width: 183px; height: 90px; background-size: contain; left: -27px;}
+    .cyberLibrary{padding: 65px 50px 110px;}
+    .cyberLibrary .cyberLibraryList{gap: 64px 32px;}
+    .cyberLibrary .cyberLibraryList>li{width: calc((100% - (32px*3))/4);}
+}
+@media screen and (max-width : 1024px) {
+    .cyberLibrary .cyberBox{padding: 0 100px 0 140px;}
+    .cyberLibrary .cyberBox::before{width: 163px; height: 80px; background-size: contain; left: -25px;}
+    .cyberLibrary .cyberLibraryList{gap: 64px 20px;}
+    .cyberLibrary .cyberLibraryList>li{width: calc((100% - (20px*2))/3);}
+}
+@media screen and (max-width : 767px) {
+    .cyberLibrary{padding: 35px 20px 80px;}
+    .cyberLibrary .cyberBox{padding: 25px 12px; min-height: 80px; font-size: 14px; margin-bottom: 35px;}
+    .cyberLibrary .cyberBox::before{display: none;}
+    .cyberLibrary .cyberLibraryList{gap: 25px 15px;}
+    .cyberLibrary .cyberLibraryList>li{width: calc((100% - (15px*1))/2);}
+}
+@media screen and (max-width : 450px) {
+    .cyberLibrary{padding: 35px 12px 80px;}
+    .cyberLibrary .cyberLibraryList{gap: 20px 0;}
+    .cyberLibrary .cyberLibraryList>li{width: calc((100% - (15px*0))/1);}
+}
