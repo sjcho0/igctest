@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="인천글로벌캠퍼스도서관 기부기증">
+    <meta name="keyword" content="인천글로벌캠퍼스도서관 기부기증">
+    <meta name="copyright" content="Incheon Global Campus. All rights Reserved.">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" /> 
+    <title>인천글로벌캠퍼스도서관 기부기증</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../style/ko/standard/common.css">
+    <link rel="stylesheet" href="../style/ko/svp/donation/sub.css">
+    <link rel="stylesheet" href="../style/ko/svp/donation/bbs.css">
+    <!-- js -->
+    <script src="../script/jquery-1.8.3.min.js"></script>
+    <script src="../script/donation/sub.js"></script>
+    <script src="../script/donation/brief.js"></script>
+
+    <!-- ui -->
+    <script src="../script/donation/swiper/swiper.min.js"></script>
+    <link rel="stylesheet" href="../script/donation/swiper/swiper.min.css">
+</head>
+<body>
+    <div id="divAccessibility">
+        <ul>
+            <li><a href="#wholeMenu">메뉴 바로가기</a></li>
+            <li><a href="#divContents">본문 바로가기(skip to content)</a></li>
+            <li><a href="#divFooter">도서관정보 바로가기</a></li>
+        </ul>
+    </div>
+    <div id="divWrapper">
+        <!-- divHeadaer -->
+        <header id="divHeader">
+            <div class="header">
+                <div class="center">
+                    <h1 class="logo"><a href="#" title=""><img src="../image/ko/local/donation/logo.png"></a></h1>
+                    <div id="divTopMenu">
+                        <ul>
+                            <li><a href="#" title="기증안내">기증안내</a></li>
+                            <li><a href="#" title="기증자">기증자</a></li>
+                            <li><a href="#" title="기증소식">기증소식</a></li>
+                            <li><a href="#" title="사이버문고">사이버문고</a></li>
+                        </ul>
+                    </div>
+                    <div class="globalMenu">
+                        <a class="langBtn" href="#" title="ENG">ENG</a>
+                        <div class="donorSearch">
+                            <a class="searchOpen" href="#" title="기증자 검색">기증자 검색</a>
+                            <div class="searchBoxW">
+                                <form>
+                                    <fieldset>
+                                        <legend>기증자 검색</legend>
+                                        <div class="searchBox">
+                                            <input class="keyword" type="text" placeholder="기증자를 검색해주세요">
+                                            <input class="searchBtn" type="submit" value="검색">
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <a class="wholeMenuBtn" href="#" title="전체메뉴 열기"><span></span><span></span><span></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="wholeMenu">
+                <div class="wholeMenuTop">
+                    <div class="center">
+                        <div class="mobileLogo"><img src="../image/ko/local/donation/logo.png"></div>
+                    </div>
+                </div>
+                <div class="wholeMenuContent">
+                    <div class="mobileSearchW">
+                        <form>
+                            <fieldset>
+                                <legend>기증자 검색</legend>
+                                <div class="searchBox">
+                                    <input class="keyword" type="text" placeholder="기증자 검색">
+                                    <input class="searchBtn" type="submit" value="검색">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="#" title="기증안내">기증안내</a>
+                            <ul class="depth2">
+                                <li><a href="#" title="기증/기부">기증/기부</a></li>
+                                <li><a href="#" title="기증자예우">기증자예우</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" title="기증자">기증자</a></li>
+                        <li><a href="#" title="기증소식">기증소식</a></li>
+                        <li><a href="#" title="사이버문고">사이버문고</a></li>
+                    </ul>
+                    <div class="mobileLanguage">
+                        <a class="langBtn" href="#" title="ENG">ENG</a>
+                        <span>Go to English site</span>
+                    </div>
+                </div>
+                <a class="mobileClose" href="#" title="모바일 전체메뉴 닫기"><img src="../image/ko/local/donation/close_m.png"></a>
+                <div class="blackBg"></div>
+            </div>
+        </header>
+        <!-- //divHeader -->
+        <div id="divContents">
+            <div id="divLocation">
+                <ul>
+                    <li class="home"><a href="#" title="">home</a></li>
+                    <li><a href="#" title="기증소식">기증소식</a></li>
+                </ul>
+            </div>
+            <div id="divTitle">기증소식</div>
+            
+            <div id="divContent">
+                <div class="searchArea">
+                    <p class="limitSearchBtn"><a href="#">선택조건으로 조회</a></p>
+                    <form name="searchFrm" id="searchFrm" method="get" action="/bbs/list/1">
+                    <input type="hidden" value="" name="mId">
+                    <fieldset>
+                        <legend>검색</legend>
+                        
+                        
+                        <span class="bunch">
+                        <label for="searchKind" class="skip">검색어</label><select id="searchKind" name="searchKind" class="selectBox1">
+                            <option value="title">제목</option>
+                            <option value="writer_Name">작성자</option>
+                            <option value="content">내용</option>
+                        </select>
+                        <input type="text" name="searchKey" class="inputTextType3 sw" maxlength="100" title="검색어" placeholder="검색어를 입력하세요">
+                        </span>
+                        <span class="bunch">
+                            <label for="dateFrom" class="skip">작성일&nbsp;</label>
+                            <input type="text" id="dateFrom" name="dateFrom" maxlength="8" class="datePicker hasDatepicker" onkeyup="javascript:validate('dateFrom')" title="작성시작일" placeholder="작성시작일">&nbsp;~&nbsp;<input type="text" id="dateTo" name="dateTo" maxlength="8" class="datePicker hasDatepicker" onkeyup="javascript:validate('dateTo')" title="작성종료일" placeholder="작성종료일">
+                        </span>
+                        <span class="bunch">
+                            <label for="oi" class="skip">정렬</label><select id="oi" name="oi" class="selectBox1" title="정렬">
+                                <option value="insert_date">작성일</option>
+                                <option value="title">제목</option>
+                                <option value="writer_name">작성자</option>
+                            </select>
+                            <label for="os" class="skip">정렬</label><select id="os" name="os" class="selectBox1" title="정렬">
+                                <option value="desc">내림차순</option>
+                                <option value="asc">오름차순</option>
+                            </select>
+                        </span>
+                        <span class="bunch">
+                            
+                            <label for="countPerPage" class="skip">쪽당</label><select id="countPerPage" name="countPerPage" class="selectBox1">
+                                <option value="10">10건</option>
+                                <option value="15">15건</option>
+                                <option value="20">20건</option>
+                                <option value="30">30건</option>
+                            </select>
+                        </span>
+                        <input type="submit" class="btnType5" value="검색">
+                    </fieldset>
+                    </form>
+                </div>
+                <div class="listInfo">
+                    <div class="listInfo1">
+                        <p class="totalCnt">총 <span class="totalcount">29</span> 건</p>
+                        <p class="pageNum">, <span>1</span>/3페이지</p>
+                    </div>
+                    <div class="listInfo2">
+                        <div class="fileSend">
+                            <ul>
+                                
+                                <li class="rss"><a href="/rss/newbook" title="RSS"><img src="../image/ko/solution/common/btn/searchBtn06.png" alt="RSS"></a></li>
+                                <li class="excel">
+                                    <a href="/newbook/savexls?bibGroup=&amp;si=&amp;sw=&amp;oi=&amp;os=" title="엑셀 파일 출력">
+                                        <img src="../image/ko/solution/common/btn/searchBtn01.png" alt="EXCEL" title="EXCEL">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="donationNews album">
+                    <ul class="albumList">
+                        <li>
+                            <img class="albumImg" src="../image/ko/local/donation/guide/ex_Img1.jpg">
+                            <div>
+                                <p class="listTitle">
+                                    <a href="#" title="">내가 겪은 순신이[이순신 탄생 100돌 기념 체험 手記 최우수상]내가 겪은 순신이[이순신 탄생 100돌 기념 체험 手記 최우수상]내가 겪은 순신이[이순신 탄생 100돌 기념 체험 手記 최우수상]</a>
+                                </p>
+                                <div class="listDetail">
+                                    <p>유양석 경력 1949.07.15 서울대 치대 졸 1954.01.27 미국군의학교 초등군사반 1960.11. 미국월타리드병원 치과고등군사반 수료 1960~1968 수도육군병원 치과과장 대통령 치과주치의 1968 육군대령 예편 1968~1979 고려병원치과과장 1979~현재 유양석치과의원원장유양석 경력 1949.07.15 서울대 치대 졸 1954.01.27 미국군의학교 초등군사반 1960.11. 미국월타리드병원 치과고등군사반 수료 1960~1968 수도육군병원 치과과장 대통령 치과주치의 1968 육군대령 예편 1968~1979 고려병원치과과장 1979~현재 유양석치과의원원장 유양석 경력 1949.07.15 서울대 치대 졸 1954.01.27 미국군의학교 초등군사반 1960.11. 미국월타리드병원 치과고등군사반 수료 1960~1968 수도육군병원 치과과장 대통령 치과주치의 1968 육군대령 예편 1968~1979 고려병원치과과장 1979~현재 유양석치과의원원장</p>
+                                </div>
+                                <p class="writeDate">2023-07-23</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="albumImg" src="../image/ko/local/donation/guide/ex_Img2.jpg">
+                            <div>
+                                <p class="listTitle">
+                                    <a href="#" title="">내가 겪은 순신이[이순신 탄생 100돌 기념 체험 手記 최우수상]</a>
+                                </p>
+                                <div class="listDetail">
+                                    <p>유양석 경력 1949.07.15 서울대 치대 졸 1954.01.27 미국군의학교 초등군사반 1960.11. 미국월타리드병원 치과고등군사반 수료 1960~1968 수도육군병원 치과과장 대통령 치과주치의 1968 육군대령 예편 1968~1979 고려병원치과과장 1979~현재 유양석치과의원원장</p>
+                                </div>
+                                <p class="writeDate">2023-07-23</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="albumImg" src="../image/ko/local/donation/guide/ex_Img3.jpg">
+                            <div>
+                                <p class="listTitle">
+                                    <a href="#" title="">내가 겪은 순신이[이순신 탄생 100돌 기념 체험 手記 최우수상]</a>
+                                </p>
+                                <div class="listDetail">
+                                    <p>유양석 경력 1949.07.15 서울대 치대 졸 1954.01.27 미국군의학교 초등군사반 1960.11. 미국월타리드병원 치과고등군사반 수료 1960~1968 수도육군병원 치과과장 대통령 치과주치의 1968 육군대령 예편 1968~1979 고려병원치과과장 1979~현재 유양석치과의원원장</p>
+                                </div>
+                                <p class="writeDate">2023-07-23</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="albumImg" src="../image/ko/local/donation/guide/ex_Img4.jpg">
+                            <div>
+                                <p class="listTitle">
+                                    <a href="#" title="">내가 겪은 순신이[이순신 탄생 100돌 기념 체험 手記 최우수상]</a>
+                                </p>
+                                <div class="listDetail">
+                                    <p>유양석 경력 1949.07.15 서울대 치대 졸 1954.01.27 미국군의학교 초등군사반 1960.11. 미국월타리드병원 치과고등군사반 수료 1960~1968 수도육군병원 치과과장 대통령 치과주치의 1968 육군대령 예편 1968~1979 고려병원치과과장 1979~현재 유양석치과의원원장</p>
+                                </div>
+                                <p class="writeDate">2023-07-23</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="albumImg" src="../image/ko/local/donation/guide/ex_Img5.jpg">
+                            <div>
+                                <p class="listTitle">
+                                    <a href="#" title="">내가 겪은 순신이[이순신 탄생 100돌 기념 체험 手記 최우수상]</a>
+                                </p>
+                                <div class="listDetail">
+                                    <p>유양석 경력 1949.07.15 서울대 치대 졸 1954.01.27 미국군의학교 초등군사반 1960.11. 미국월타리드병원 치과고등군사반 수료 1960~1968 수도육군병원 치과과장 대통령 치과주치의 1968 육군대령 예편 1968~1979 고려병원치과과장 1979~현재 유양석치과의원원장</p>
+                                </div>
+                                <p class="writeDate">2023-07-23</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="paging">
+                    <span><span>1</span><a href="?pn=2">2</a><a href="?pn=3">3</a></span>
+                </div>
+            </div>
+            <div class="blackBg"></div>
+        </div>
+        <!-- divContents -->
+        <!-- divFooter -->
+        <footer id="divFooter"> 
+            <div class="footer1">
+                <div class="center">
+                    <ul class="footerMenu">
+                        <li class="point"><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+                        <li><a href="#" title="이메일무단수집거부">이메일무단수집거부</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="center">
+                    <div class="contectW">
+                        <p class="contect">
+                            <span class="address">(21985) 인천글로벌캠퍼스운영재단 인천광역시 연수구 송도 문화로 119</span>
+                            <span class="tel">TEL. 032-626-0591~2</span>
+                            <span class="fax">FAX. 032-626-0549</span>
+                        </p>
+                        <p class="copyRight">CopyrightⓒIncheon Global Campus. All right Reserved.</p>
+                    </div>
+                    <div class="footerLogo">
+                        <img src="../image/ko/local/donation/f_logo.png">
+                    </div>
+                </div>
+            </div>
+            <a class="gotoTop" href="#" title="">TOP</a>
+        </footer>
+        <!-- //divFooter -->
+    </div>
+</body>
+</html>
